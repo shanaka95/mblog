@@ -1,4 +1,3 @@
-### Project Description: MBlog
 
 **Project Name:** MBlog
 
