@@ -1,0 +1,22 @@
+# Block direct access to all .php files
+<FilesMatch "\.php$">
+    RewriteEngine On
+    RewriteCond %{THE_REQUEST} !^[A-Z]{3,}\ /.*index\.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ - [F,L]
+</FilesMatch>
+
+# Existing rules
+RewriteEngine On
+
+RewriteRule ^404$ 404.php [L,QSA]
+RewriteRule ^sitemap.xml$ sitemap.php [L,QSA]
+RewriteRule ^sitemap$ sitemap.php [L,QSA]
+RewriteRule ^([a-zA-Z0-9\-\_°]+)$ post.php?id=$1 [L,QSA]
+RewriteRule ^category/([a-zA-Z0-9\-\_°]+)$ index.php?category=$1 [L,QSA]
+
+# Protect sensitive files like db.db
+<Files "db.db">
+    Order Allow,Deny
+    Deny from all
+</Files>
