@@ -4,6 +4,13 @@
 **Project Overview:**
 MBlog is a lightweight, minimalistic, and portable blog engine designed to offer a simple yet effective platform for creating and managing blogs. Built using PHP and SQLite3, MBlog is ideal for users who want a fast, efficient, and easy-to-deploy blogging solution without the overhead of complex content management systems. MBlog focuses on delivering a streamlined blogging experience with built-in SEO optimization to help your content rank better in search engines.
 
+**DEMO:**
+
+https://prodactly.com/
+
+https://exploreparadox.com/
+
+
 **Key Features:**
 - **Minimalist Design:** MBlog provides a clean and simple user interface, ensuring that the focus remains on your content without unnecessary distractions.
 - **Portability:** With no dependency on large databases, MBlog uses SQLite3, making it incredibly easy to deploy on any server or local environment with minimal setup.
